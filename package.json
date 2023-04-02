@@ -1,0 +1,44 @@
+{
+  "name": "tarot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "tarot",
+  "author": "Quan",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@chakra-ui/gatsby-plugin": "^3.1.1",
+    "@chakra-ui/react": "^2.5.5",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "framer-motion": "^10.10.0",
+    "gatsby": "^5.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.5",
+    "redux": "^4.2.1",
+    "redux-dispatcher": "^1.9.84"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.8",
+    "@types/react": "^18.0.29",
+    "@types/react-dom": "^18.0.11",
+    "eslint": "^8.37.0",
+    "eslint-plugin-react": "^7.32.2",
+    "prettier": "^2.8.7",
+    "typescript": "^5.0.2"
+  },
+  "eslintIgnore": [
+    "node_modules/",
+    "lib/"
+  ]
+}
