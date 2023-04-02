@@ -1,5 +1,4 @@
-import React, { FC, useContext } from 'react';
-import { Reader } from '../types/Reader';
+import React, { useContext } from 'react';
 import {
   Avatar,
   Box,
@@ -23,15 +22,11 @@ import GlobalContext from './GlobalContext';
 import BookingPage from './BookingPage';
 import ActionButtons from '../components/ActionButtons';
 
-interface Props {
-  reader: Reader;
-}
-
-const ReaderProfilePage: FC<Props> = () => {
+const ReaderProfilePage = () => {
   const { reader, dispatch } = useContext(GlobalContext);
   return (
     <VStack width={'100%'} height={[2500, 1500]}>
-      <ActionButtons title="ĐẶT LỊCH HẸN" onSubmit={() => dispatch({ Page: BookingPage })} />
+      <ActionButtons title="ĐẶT LỊCH HẸN" osnSubmit={() => dispatch({ Page: BookingPage })} />
 
       <VStack>
         <Card width={[250, 600]} height={[400, 800]} bg="black">
